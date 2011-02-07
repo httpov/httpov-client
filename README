@@ -1,0 +1,3 @@
+The client is available in two distinct flavours; version 1.x is a bash script, and version 2.x is a Python 2.4 script.
+
+Versions 1.x and 2.x are in all relevant ways intended to be feature compatible. Please make sure they stay that way, if possible.

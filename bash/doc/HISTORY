@@ -1,0 +1,8 @@
+1.2:
+====
+Added background task for reporting activity
+Fixed broken abortbatch handling
+
+1.1:
+====
+Added client grouping

@@ -1,0 +1,11 @@
+2.2:
+====
+Added background task for reporting activity
+Fixed broken abortbatch handling
+(Still broken with pvengine.exe)
+Some code cleanup
+
+2.1:
+====
+Added client grouping
+First version of the Python 2.4 client

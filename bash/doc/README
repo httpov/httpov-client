@@ -1,0 +1,68 @@
+Configuration:
+
+The following settings can be set in the global configuration file.
+Its path on unixish systems is /etc/httpovclient.conf
+
+Options set in the global configuration file can be overridden
+in the running user's configuration file.
+Its path is either ~/.httpovclient/prefs or  ~/_httpovclient/prefs
+
+HP_SERVER=""
+
+The URL of the HTTPov server to use.
+
+HP_PASSWORD="flimpaflump"
+
+Not used.
+
+HP_POV="povray"
+
+The name of the POV-Ray executable.
+
+HP_VERURL="http://columbiegg.com/httpov/latest/"
+
+Where to look for messages about client updates.
+
+HP_VERPER=259200
+
+How often, in seconds, to look for client updates. The default
+is once every 72 hours.
+
+HP_TRYTIMES=10
+
+How many times to retry network connections before giving up.
+0 means try forever.
+
+HP_GROUP=""
+
+Clients can be grouped in client groups, for statistical purposes.
+This way, rendering statistics can be done for groups of separate
+computers, as well as for concurrent clients using one computer's
+separate cores.
+
+sleepmax=300
+
+The client has an exponential back-off when retrying. sleepmax is the
+upper limit in seconds.
+
+nicelevel=5
+
+When running POV-Ray or other time consuming tasks, the process will
+be niced to nicelevel. Changed to 5, because the former 10 caused 
+some systems not to scale up the CPU frequency.
+
+The client ID for each client can be set using the command line:
+
+httpovclient.sh 999
+
+will set HP_CID to 999, instead of the process' PID.
+
+The following setting can be set in the global configuration file,
+but will not do anything useful in the user configuration file:
+
+HP_USER=""
+
+The user name of the user to run the client as if it is started
+by root. For security reasons, running as root is not supported.
+
+The setting will be disregarded if the script is not run by root.
