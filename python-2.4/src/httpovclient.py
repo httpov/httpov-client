@@ -85,7 +85,7 @@ else:
 #Used with minimal modifications from
 #http://antonym.org/2005/12/dropping-privileges-in-python.html
 #by Gavin Baker
-#License: Unknown
+#License: GPL
 
 def hpdroppriv(uid_name):
 
