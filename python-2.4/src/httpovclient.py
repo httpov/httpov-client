@@ -212,7 +212,7 @@ def hpactiveloop():
 				except urllib2.URLError:
 					pass
 				aloopcount = 60
-			time.sleep(1)
+		time.sleep(1)
 
 def hpfindexe(file, dir):
 	if(dir != ""):
