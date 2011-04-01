@@ -176,7 +176,7 @@ else:
 # Client script settings
 
 HP_CLIENT = platform.node()+":"+str(HP_CID)
-HP_VERSION = "2.2"
+HP_VERSION = "2.2.1"
 HP_PID = os.getpid()
 HP_WD = tempfile.mkdtemp(prefix='HTTPov_')
 HP_CMDFILE = "httpovclient.commands"
